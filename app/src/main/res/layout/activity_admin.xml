@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/image"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Bus"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="-11dp"
+        android:hint="Bus Name"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="-9dp"
+        android:hint="Source"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/source"
+        android:layout_marginTop="-13dp"
+        android:hint="destination"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_below="@id/destination"
+        android:hint="Start Time"/>
+
+
+    <EditText
+        android:id="@+id/Arrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start"
+        android:layout_marginTop="-4dp"
+        android:hint="Arrival Time"
+        android:textSize="24dp" />
+
+
+    <EditText
+        android:id="@+id/Fare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start"
+        android:layout_marginTop="47dp"
+        android:hint="Fare"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destination"
+        android:layout_marginTop="147dp"
+        android:hint="Date"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="383dp"
+        android:layout_marginBottom="285dp"
+        android:hint=" Duration"
+        android:minHeight="48dp"
+        android:textSize="24dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Fare"
+        android:layout_marginTop="92dp"
+        android:text="Insert Data"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="15dp"
+        android:text="View Data"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnView"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/white"
+        android:text="Delete Data"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>
